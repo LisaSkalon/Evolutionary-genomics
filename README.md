@@ -1,3 +1,3 @@
 # Laboratory of Evolutionary genomics and Paleogenomics
 
-The collection of scripts used for the projects
+The collection of scripts used in the projects
