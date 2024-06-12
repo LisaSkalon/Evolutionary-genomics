@@ -30,7 +30,7 @@ for fasta_file in os.listdir(fasta_dir):
         with open(file_path, "r") as handle:
             for record in SeqIO.parse(handle, "fasta"):
                 seq_length = len(record.seq)
-                gap_count = record.seq.count('-') + record.seq.count('?') + record.seq.count('?')
+                gap_count = record.seq.count('-') + record.seq.count('?') + record.seq.count('N')
                 
                 total_length += seq_length
                 total_gap_count += gap_count
