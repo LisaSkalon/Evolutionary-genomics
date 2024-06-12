@@ -12,6 +12,7 @@ import statistics
 import matplotlib.pyplot as plt
 import pandas as pd
 
+### For multiple fasta files (for aligned orthologs)
 # Path to the directory containing the FASTA files
 fasta_dir = "/home/gospozha/EvoGen/alignments"
 
@@ -68,11 +69,12 @@ plt.savefig(plot_path)
 # Show the plot
 plt.show()
 
+### For one multifasta file (concatenated alignment)
 # Path to the directory containing the FASTA files
 fasta_dir = "/home/gospozha/EvoGen/align/concat"
 
 
-# Initialize variables to store total length, min length, max length, and gap counts
+# Initialize variables 
 total_length = 0
 total_gap_count = 0
 lengths = []
